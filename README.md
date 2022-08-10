@@ -1,4 +1,8 @@
-This is a Telegram Bot written in Python for mirroring files on the Internet to your Google Drive or Telegram. Based on [python-aria-mirror-bot](https://github.com/lzzy12/python-aria-mirror-bot)
+# How to deploy?
+- Basic Tutorial Deploying Telegram Mirror Bot
+ <p><a href="https://youtu.be/IUmq1paCiHI"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
+ 
+<p align="right"><sub>Based on <a href="https://github.com/lzzy12/python-aria-mirror-bot">python-aria-mirror-bot</a> repository<sub></p>
 
 # Features:
 
@@ -513,5 +517,38 @@ Using Aria2c you can also use built in feature from bot with or without username
 machine example.workers.dev password index_password
 ```
 Where host is the name of extractor (eg. instagram, Twitch). Multiple accounts of different hosts can be added each separated by a new line.
+
+-----
+
+## Gdtot Crypt
+- Tutorial Video How to Get GDTOT Crypt:
+ <p><a href="https://youtu.be/EfZ29CotRSU"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
+
+To Clone or Leech gdtot link follow these steps:
+1. Login/Register to [gdtot](https://new1.gdtot.sbs).
+2. Copy this script and paste it in browser address bar.
+   - **Note**: After pasting it check at the beginning of the script in broswer address bar if `javascript:` exists or not, if not so write it as shown below.
+   ```javascript
+   javascript:(function () {
+    const input = document.createElement('input');
+    COOKIE = JSON.parse(JSON.stringify({cookie : document.cookie}));
+    input.value = COOKIE['cookie'].split('crypt=')[1];
+    document.body.appendChild(input);
+    input.focus();
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+     if(result)
+       alert('Crypt copied to clipboard');
+     else
+       prompt('Failed to copy Crypt. Manually copy below Crypt\n\n', input.value);
+   })();
+   ```
+   - After pressing enter your browser will prompt a alert.
+3. Now you'll get Crypt value in your clipboard
+   ```
+   NGxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxWdSVT0%3D
+   ```
+4. From this you have to paste value for **CRYPT** in config.env file.
 
 -----
