@@ -290,6 +290,30 @@ try:
 except:
     CMD_INDEX = ''
 try:
+    BUTTON_FOUR_NAME = getConfig('BUTTON_FOUR_NAME')
+    BUTTON_FOUR_URL = getConfig('BUTTON_FOUR_URL')
+    if len(BUTTON_FOUR_NAME) == 0 or len(BUTTON_FOUR_URL) == 0:
+        raise KeyError
+except:
+    BUTTON_FOUR_NAME = None
+    BUTTON_FOUR_URL = None
+try:
+    BUTTON_FIVE_NAME = getConfig('BUTTON_FIVE_NAME')
+    BUTTON_FIVE_URL = getConfig('BUTTON_FIVE_URL')
+    if len(BUTTON_FIVE_NAME) == 0 or len(BUTTON_FIVE_URL) == 0:
+        raise KeyError
+except:
+    BUTTON_FIVE_NAME = None
+    BUTTON_FIVE_URL = None
+try:
+    BUTTON_SIX_NAME = getConfig('BUTTON_SIX_NAME')
+    BUTTON_SIX_URL = getConfig('BUTTON_SIX_URL')
+    if len(BUTTON_SIX_NAME) == 0 or len(BUTTON_SIX_URL) == 0:
+        raise KeyError
+except:
+    BUTTON_SIX_NAME = None
+    BUTTON_SIX_URL = None
+try:
     RSS_CHAT_ID = getConfig('RSS_CHAT_ID')
     if len(RSS_CHAT_ID) == 0:
         raise KeyError
@@ -354,6 +378,12 @@ try:
         raise KeyError
 except:
     CUSTOM_FILENAME = None
+try:
+    CRYPT = getConfig('CRYPT')
+    if len(CRYPT) == 0:
+        raise KeyError
+except:
+    CRYPT = None
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
