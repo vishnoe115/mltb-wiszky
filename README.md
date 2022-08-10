@@ -304,8 +304,8 @@ sudo docker-compose stop
 ```
 sudo docker-compose start
 ```
-- Tutorial video from Tortoolkit repo for docker-compose and checking ports
-<p><a href="https://youtu.be/c8_TU1sPK08"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
+- Tutorial video Deploying on VPS
+<p><a href="https://youtu.be/IzUG7U7v4U4"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
 ------
 
