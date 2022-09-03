@@ -1,7 +1,3 @@
-# How to deploy?
-- Basic Tutorial Deploying Telegram Mirror Bot
- <p><a href="https://youtu.be/IUmq1paCiHI"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
- 
 <p align="right"><sub>Based on <a href="https://github.com/lzzy12/python-aria-mirror-bot">python-aria-mirror-bot</a> repository<sub></p>
 
 # Features:
